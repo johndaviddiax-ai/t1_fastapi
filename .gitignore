@@ -1,1 +1,4 @@
+venv/
 .env
+structure.sh
+src/__pycache__

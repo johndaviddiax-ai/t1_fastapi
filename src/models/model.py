@@ -1,4 +1,4 @@
-from typing import Opcional
+from typing import Optional
 from pydantic import BaseModel, EmailStr
 
 class TraineeModel(BaseModel):
@@ -11,10 +11,10 @@ class TraineeModel(BaseModel):
     record_number: int
     
 class TraineeUpdateModel(BaseModel):
-    firstname: Opcional[str] = None
-    lastname: Opcional[str] = None
-    email: Opcional[EmailStr] = None
-    age: Opcional[int] = None
-    program : Opcional[str] = None
-    record_number: Opcional[int] = None
+    firstname: Optional[str] = None
+    lastname: Optional[str] = None
+    email: Optional[EmailStr] = None
+    age: Optional[int] = None
+    program : Optional[str] = None
+    record_number: Optional[int] = None
     
